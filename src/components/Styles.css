@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+#root{
+    background-color: rgb(230, 230, 230);
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;    
+    background-color:#09101a;
+    padding-top:1%;
+    padding-bottom: 1%;
+    z-index: 100;
+}
+
+.logo{
+    image-rendering:auto;
+    height: 35px;
+    position: relative;
+    top: 7px;
+}
+
+
+
+.linkName{
+    position: relative;
+    padding:5px;
+    border: 2px solid #09101a;
+}
+
+.subName{
+    margin: 0px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-family:'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+.mainName{
+    position:relative;
+    color: white;
+    display: block;
+}
+
+.linkName:hover{
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.afterText{
+    font-size: 15.5px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.beforeText{
+    font-size: 15.5px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.search{
+    padding:20px;
+    display: flex;
+    position:absolute;
+    left:24%;
+    top: 10%;
+    flex-direction: row;
+    
+}
+
+.searchbar{
+    position: absolute;
+    height:100%;
+    width: 1600%;
+    top: 10%;
+    border-radius: 4px;
+}
+
+
+
+.schicon{
+    position:fixed;
+    left:70.6%;
+    top: 1.9%;
+    background-color: rgb(255, 163, 102);
+    width: 2.2%;
+    height: 5.35%;
+}
+
+
+.searchicon{
+    position: relative;
+    font-size: 150%;
+    color: black;
+    padding-left:5px;
+    padding-top: 3px;
+}
+
+
+
+input:focus{
+    outline: none;
+}
+
+
+
+.cartimg{
+    position:relative;
+    height:40px;
+}
+
+.returns{
+    position: absolute;
+    right:10%;
+}
+
+.guest{
+    position: absolute;
+    right:16%;
+    top: 5%;
+}
+
+.address{
+    position: absolute;
+    left:12%;
+}   
+
+.cart{
+    position: absolute;
+    right:1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+}
+
+.cartText{
+    color: white;
+    font-size: 19px;
+    position: relative;
+    top: 9px;
+}
+
+.effect{
+    position: relative;
+    padding-top:4.4%;
+    z-index: -10;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.body{
+    padding-top:62px;
+}
+
+.cntrl{
+    position: absolute;
+    bottom:60%;
+    z-index: 0;
+    transform:scale(1.5);
+    margin-right:56px;
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.sidescroller{
+    overflow-x:scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    z-index: 99;
+}
+
+.sidescroller::-webkit-scrollbar {
+    display: none;
+}
+
+.card1{
+    padding: 7px;
+    margin: 5px;
+    width:25%;
+    background-color: white;
+    border: 0.1px solid rgb(153, 153, 153);
+    flex-shrink: 0;
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 1px 0.7px 5px rgb(179, 179, 179);
+}
+
+.card1 img{
+    height: 65%;
+}
+
+.card1:hover{
+    transform: scale(1.02);
+}
+
+.about{
+    font-size:25px;
+    font-weight: bold;
+}
+
+.seemore:hover{
+    color: midnightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.toppicks{
+    margin-top: -250px;
+}
+
+.toppicks h1{
+    z-index: 100;
+    color: white;
+}
+ 
+.add{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    image-rendering:auto;
+}
+.container1{
+    background-color: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.sidescroll1{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.sidescroll1::-webkit-scrollbar{
+    display: none;
+}
+
+.card2{
+    padding: 7px;
+    margin: 5px;
+    width:20%;
+    background-color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content:space-around;
+    cursor: pointer;
+    border: none;
+}
+
+.card2 p{
+    color: rgb(13, 82, 161);
+    text-overflow: ellipsis;
+}
+
+.card2 p:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.card h5{
+    cursor:auto;
+}
+
+.sub{
+    font-size:12px;
+}
+
+
+.card3{
+    padding: 7px;
+    margin: 5px;
+    width:20%;
+    height:300px;
+    background-color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content:space-around;
+    cursor: pointer;
+    border: none;
+}
+
+.sup{
+    font-size:18px;
+    font-weight: 600;
+}
+
+.rate{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.seeMore{
+    color: rgb(13, 82, 161);
+    font-size: 13px;
+}
+
+.seeMore:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:hsl(216, 60%, 9%);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.heading{
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 6px;
+    color: white;
+}
+
+.lnk{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -15px;
+    color: white;
+}
+
+.lnk:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login{
+    background-color: rgb(217, 217, 217);
+    height:657px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin{
+    padding:50px;
+    animation:change linear 2s infinite;
+}
+
+@keyframes change{
+    0% {background-color: yellow}
+    25% {background-color: red}
+    50% {background-color: rgb(0, 255, 170)}
+    75% {background-color: rgb(0, 0, 204)}
+    100% {background-color: rgb(0, 128, 128)}
+}
